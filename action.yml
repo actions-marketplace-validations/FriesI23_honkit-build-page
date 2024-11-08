@@ -7,7 +7,7 @@ branding:
 inputs:
   nodejs-version:
     description: Node.js version required for building pages
-    default: 18.x
+    default: "20"
     required: true
   output-sitedir:
     description: Final directory where the book site is stored
@@ -21,7 +21,7 @@ runs:
   using: composite
   steps:
     - name: Init Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ inputs.nodejs-version }}
 
