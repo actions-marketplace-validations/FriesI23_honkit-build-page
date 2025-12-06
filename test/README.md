@@ -11,6 +11,13 @@ To use this GitHub Action, follow these steps:
 
 ```yaml
 - name: Build Pages
+  uses: FriesI23/honkit-build-page@v2
+```
+
+or
+
+```yaml
+- name: Build Pages
   uses: FriesI23/honkit-build-page@<version>
   with:
     nodejs-version: <overwrite node.js version>
